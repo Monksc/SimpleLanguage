@@ -1,0 +1,66 @@
+SimpleLang Docs
+
+Types
+    1) number | a decimal number
+        number forAndAHalf = 4.5
+    2) text | character strung together
+        text helloWorld = "Hello World"
+
+    declare them by using this line
+    type name = value
+    
+Loops
+    1) loop | just one loop with always true value
+        loop {
+    2) do while loop | everything above the stop always 
+                happens. everything after sometimes happens
+        number foo = 0
+        loop {
+            print("ALWAYS HAPPENS")
+            
+            foo == 0 {
+                stop 2
+            }
+            
+            // doesnt always happen
+            foo = foo - 1
+        }
+        
+        
+Control Flow
+    1) stop <int> | it stops reading code intill you get the int value amount 
+                more } than {
+        stop 4
+        
+if and else if and else
+    1) value == value { | if checks to see if 2 value equal
+        foo == bar {
+    2) else if only goes through if the if before doesnt and the if does work
+                    else is everything at the end
+        loop {
+            foo == bar {
+                print("if) foo equals bar")
+                stop 2
+            }
+            foo == bar + 1 {
+                print("else if) foo == bar + 1")
+                stop 2
+            }
+            print("else) foo doesnt equal bar")
+            stop 1
+        }
+    
+Comments
+    1) // If a line has // at the beginning the line wont be read
+        // this line isnt read
+        this // full line is read
+        
+Operands
+    1) + | adds the left and right or concanates them if its text
+    2) - | subtracts the rigth value from the left
+    3) * | multiplys the left and right value
+    4) / | divides the right value from the left
+    5) ^ | it multiplies the left value by itself the right value amount of times
+    6) % | it returns the remainde of the left value divided by the right value
+    
+    newValue = leftValue <op> rightValue
